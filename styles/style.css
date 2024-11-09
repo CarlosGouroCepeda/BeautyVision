@@ -6,14 +6,6 @@ header {
     padding: 10px 50px;
 }
 
-body {
-    background-image: url('./images/fondoPa.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: #fff;
-}
 .logo-container {
     display: flex;
     align-items: center; 
@@ -353,7 +345,7 @@ body {
     color: white;
     padding: 0px 0px 50px;
     position: relative;
-    z-index: 1;
+    z-index: -1;
 }
 
 .servicios-content {
@@ -767,3 +759,54 @@ form a:hover {
         flex-direction: column;
     }
 }
+
+#profile-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.user-email {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    border-radius: 5px;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#dropdown-menu.active {
+    display: block;
+}
+
+#dropdown-menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdown-menu a:hover {
+    background-color: #444;
+}
+
+#dropdown.show .dropdown-menu {
+    display: block;
+}
+

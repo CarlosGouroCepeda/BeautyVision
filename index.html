@@ -29,8 +29,24 @@
                 <li><a href="./botones/nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
-        <div class="login">
+        <div class="login" id="login-container">
             <button class="login-btn" id="loginButton">Iniciar sesión</button>
+        </div>
+
+        <div class="login" id="profile-container" style="display: none;">
+            <span id="user-email" class="user-email"></span>
+            <img id="profile-image" class="profile-image" alt="Foto de perfil">
+
+            <div class="dropdown">
+                <button id="dropdown-button" class="dropdown-toggle">
+                    <i class="fas fa-caret-down"></i>
+                </button>
+                <div id="dropdown-menu" class="dropdown-menu">
+                    <a href="#" id="edit-profile">Editar Perfil</a>
+                    <a href="#" id="scheduled-appointments">Citas Programadas</a>
+                    <a href="#" id="logoutButton">Cerrar sesión</a>
+                </div>
+            </div>
         </div>
     </header>
 
